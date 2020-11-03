@@ -28,7 +28,7 @@ class Agendamento {
         Preparar para zerar carrinho tempo expirado
         */
         let separarHora = data.split(' ')
-        let horaFuturaParaZerar = this.addMinutes(separarHora[1], 1)
+        let horaFuturaParaZerar = this.addMinutes(separarHora[1], 60)
         let horaPararZerarcarinho = horaFuturaParaZerar.split(':')
         this.tarefas.push( {id: dados.email, hora: horaFuturaParaZerar} )
         

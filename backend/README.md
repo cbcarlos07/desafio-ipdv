@@ -8,8 +8,8 @@
 ## [6. Lista do que foi feito](#list)
 ## [7. SOLID](#solid)
 ## [8. Sequelize](#sequelize)
-## [9. Testes Unitários](#test)
-## [10. Testes Rest](#rest)
+## [9. Testes Rest](#rest)
+## [10. Particularidades do Projeto](#part)
 
 
 ## <a id="intro">1. Introdução
@@ -150,11 +150,11 @@ Desfazer Tudo
 [Voltar ao inicio](#begin)
 
 
-## <a id="rest"> 10. Testes Rest    
+## <a id="rest"> 9. Testes Rest    
 
 Para o teste de API foi usada a ferramenta [Postman](https://www.postman.com/)
 
-Na pasta [rest](https://github.com/cbcarlos07/desafio-vipcommerce/tree/master/rest) deste projeto tem o arquivo com os testes
+Na pasta [rest](https://github.com/cbcarlos07/desafio-ipdv/tree/master/backend/rest) deste projeto tem o arquivo com os testes
 
 Basta importar dentro da ferramenta o arquivo `json` e as requisiçoes estão prontas
 
@@ -163,3 +163,17 @@ Execução dos testes é baseado no banco de dados de teste.
 Na pasta [er](https://github.com/cbcarlos07/desafio-ipdv/tree/master/backend/src/config/db/ddl) encontra-se o arquivo com a base de dados de teste
 
 [Voltar ao inicio](#begin)
+
+## <a id="part"> 10. Particularidades do Projeto
+
+O projeto trabalha de forma reativa ou seja, automatizada
+
+Após feito o login, o usuário tem **60 minutos** para usar o sistema.
+
+
+
+Após os **60 minutos** passados o backend avisa o  
+
+[Voltar ao inicio](#begin)
+
+

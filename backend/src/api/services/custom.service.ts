@@ -53,7 +53,7 @@ class CustomService{
                     nome,
                     email
                 }
-                const token = jwt.sign(user, env.JWT_SECRET, { expiresIn: '10s' })
+                const token = jwt.sign(user, env.JWT_SECRET, { expiresIn: '60m' })
                 resolve({token: token, status: true}) 
               }
               else {
