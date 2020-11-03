@@ -53,7 +53,7 @@ O Banco de dados utilizado no projeto foi o MySQL na versão 8.0.
 
 O repositório do Docker Compose do banco de dados utilizado encontra-se [aqui](https://github.com/cbcarlos07/docker-mysql)
 
-![alt text](https://github.com/cbcarlos07/desafio-vipcommerce/blob/master/src/config/db/ddl/er.png)
+![alt text](https://github.com/cbcarlos07/desafio-ipdv/blob/master/backend/src/config/db/ddl/mer.png)
 
 <b>NOTA</b>
 
@@ -63,7 +63,7 @@ Antes de executar o comando do docker-compose, primeiro crie a rede interna do d
 
     docker network create -d bridge mysql-network
 
-Na pasta [er](https://github.com/cbcarlos07/desafio-vipcommerce/tree/master/src/config/db/ddl) deste projeto encontram-se o MER (Modelo Entidade Relacionamento) e o arquivo sql.sql com inserts já realizados
+Na pasta [er](https://github.com/cbcarlos07/desafio-ipdv/tree/master/backend/src/config/db/ddl) deste projeto encontram-se o MER (Modelo Entidade Relacionamento) e o arquivo sql.sql com inserts já realizados
 
 Certifique-se de primeiro deixar esse __container__ em execução antes de prosseguir com a inicalização do projeto
 
@@ -101,7 +101,7 @@ Após o banco de dados estiver em execução, os pacotes estiverem instalados, o
 
 ## <a id="list"> 6. Lista do que foi feito
 
-Para ver a lista do que foi feito, basta [clicar aqui](https://www.notion.so/Vip-Commerce-651e8a6171334b7d84e167969137ec59)
+Para ver a lista do que foi feito, basta [clicar aqui](https://www.notion.so/IPDV-43703f958e5d49b6992be8b560bfaac4)
 
 [Voltar ao inicio](#begin)
 
@@ -149,17 +149,6 @@ Desfazer Tudo
 
 [Voltar ao inicio](#begin)
 
-## <a id="test"> 9. Testes Unitários
-
-O pacote para os testes automáticos utilizado foi o [Ava](https://www.npmjs.com/package/ava)
-
-Para executar os testes, basta dar o comando na raiz do projeto
-
-    npm test
-
-![alt text](https://github.com/cbcarlos07/desafio-vipcommerce/blob/master/src/tests/Tests.png)
-
-[Voltar ao inicio](#begin)
 
 ## <a id="rest"> 10. Testes Rest    
 
@@ -171,6 +160,6 @@ Basta importar dentro da ferramenta o arquivo `json` e as requisiçoes estão pr
 
 Execução dos testes é baseado no banco de dados de teste.
 
-Na pasta [er](https://github.com/cbcarlos07/desafio-vipcommerce/tree/master/src/config/db/ddl) encontra-se o arquivo com a base de dados de teste
+Na pasta [er](https://github.com/cbcarlos07/desafio-ipdv/tree/master/backend/src/config/db/ddl) encontra-se o arquivo com a base de dados de teste
 
 [Voltar ao inicio](#begin)
