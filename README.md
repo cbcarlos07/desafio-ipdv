@@ -121,8 +121,8 @@ Esse script criará o banco de dados, as tabelas e ainda insere dados de teste
 Após o banco de dados estiver em execução, os pacotes estiverem instalados, o script de base ser executado, aí o projeto poderá entrar em operação. Para isso, dê o comando:
 
     npm run dev
-    
-**FRONTDEND**
+
+**FRONTEND**
 
 Depois que a API estiver inicializada e em execução, dentro da raíz do frontend é necessário rodar o comando:
 
