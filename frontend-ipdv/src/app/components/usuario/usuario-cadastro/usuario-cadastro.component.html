@@ -1,0 +1,56 @@
+<div id="page-wrapper">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">{{title}} </h1>
+            </div>
+        </div>
+
+         <!-- /.row -->
+         <!-- ... Your content goes here ... -->
+         <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <button  class="btn btn-primary" (click)="voltar()">Voltar</button> 
+                    </div>
+
+                    <div class="panel-body">
+                        <form [formGroup]="form" (ngSubmit)="salvar()">
+                            <app-input errorMessage="" [showTip]="false">
+                                <input type="text" class="form-control" placeholder="Nome do Usuário"  formControlName="nome" >
+                            </app-input>
+
+
+                            <app-input errorMessage="" [showTip]="false">
+                                <input type="email" class="form-control" placeholder="E-maill do Usuário"  formControlName="email" >
+                            </app-input>
+
+                            <app-input errorMessage="" [showTip]="false">
+                               <input type="password" class="form-control" placeholder="Senha"  formControlName="senha" >
+                           </app-input>
+
+                           <app-input errorMessage="" [showTip]="false">
+                               <select class="form-control" formControlName="cargo_id">
+                                   <option *ngFor="let cargo of cargos" [value]="cargo.id">{{ cargo.nome }}</option>
+                               </select>
+                           </app-input>
+
+                           <app-input errorMessage="" [showTip]="false">
+                               <select class="form-control" formControlName="departamento_id">
+                                   <option *ngFor="let departamento of departamentos" [value]="departamento.id">{{ departamento.nome }}</option>
+                               </select>
+                           </app-input>
+
+                            <button type="submit" class="btn btn-success" [disabled]="form.invalid">
+                                <i class="fa fa-save"></i>  Salvar
+                            </button>
+                       </form>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+    </div>
+</div>

@@ -1,0 +1,49 @@
+.snackbar{
+    min-width: 250px;
+    margin-left: -125px;
+   /* background-color: #333;*/
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+
+.snackbar1{
+    min-width: 250px;
+    margin-left: -125px;
+   /* background-color: #333;*/
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+.snackbar2{
+    min-width: 250px;
+    margin-left: -125px;
+   /* background-color: #333;*/
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+#close {
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    background:#b2dfdb;
+    font-size: 10px;
+    color: #004d40;
+    margin: -10px -12px
+}

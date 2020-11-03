@@ -72,7 +72,7 @@ class UsuarioController {
                    .then( (response: any) =>{
                         resp.status(200).json( response )
                     }).catch( e => {
-                        console.log(e);
+                        
                         
                         resp.status(204).json( {msg: "Falha ao buscar item!"} )
                     })
@@ -87,6 +87,16 @@ class UsuarioController {
                     }).catch( e => {
                         resp.status(204).json( {msg: "Falha ao atualizar token!"} )
                     })
+    }
+
+    getUsersWithCargo(req: Request, resp: Response ){
+        return customService
+            .getUsersWithCargo(  )
+            .then( (response: any) =>{
+                resp.status(200).json( response )
+            }).catch( e => {
+                resp.status(204).json( {msg: "Falha ao atualizar token!"} )
+            })
     }
 
 }

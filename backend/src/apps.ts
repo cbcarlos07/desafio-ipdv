@@ -8,6 +8,8 @@ const environments = require('./config/environments')
 import { swaggerDocument } from './openapi/swagger'
 import CargoModel from './config/db/models/cargo.model';
 import GenericService from './api/services/generic.service';
+import realtime from './api/subscribe/realtime';
+import schedule from './jobs/schedule'
 
 class Application{
     app: express.Application
@@ -21,20 +23,23 @@ class Application{
     }
 
     listen(){
-        require('./config/db/database')
+
         
 
+        require('./config/db/database')
+        let http = require("http").Server(this.app);
+        let io = require("socket.io")(http);
         this.app.use(bodyParser.json());
         this.app.use(bodyParser.urlencoded( { extended:false } ));
-        
-
+        realtime(io)
+        schedule.setRealtime( io )
         this.connection
             .testConnection()
             .then(() => {
                 this.enableCors()
                 this.security()
                 this.routes(  )
-                this.app.listen( this.port, () =>{
+                http.listen( this.port, () =>{
                     console.log(`Api rodando da porta ${this.port}`);
                     
                 })
@@ -55,7 +60,7 @@ class Application{
 
     security(){
         const blocks = [
-            '/'
+         
         ]
         this.app.use( jwtMiddleware( { blocks } ) )
     }
