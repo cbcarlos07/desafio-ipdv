@@ -166,7 +166,7 @@ Na pasta [er](https://github.com/cbcarlos07/desafio-ipdv/tree/master/backend/src
 
 ## <a id="part"> 10. Particularidades do Projeto
 
-O projeto trabalha de forma reativa ou seja, automatizada
+O projeto trabalha de forma reativa ou seja, em tempo real
 
 Após feito o login, o usuário tem **60 minutos** para usar o sistema.
 
