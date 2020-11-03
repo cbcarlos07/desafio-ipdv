@@ -1,4 +1,4 @@
-# <a id="begin"> Vip Commerce
+# <a id="begin"> Desafio IPDV
 
 ## [1. Introdução](#intro)
 ## [2. O que foi usado](#uso)
