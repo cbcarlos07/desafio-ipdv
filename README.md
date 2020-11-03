@@ -16,13 +16,15 @@
 
 Este projeto é para avaliação técnica de uma desafio FullStack para a IPDV .
 
-Este projeto foi desenvolvido em NodeJS (12.18.3) com TypeScript (^3.9.3)
+Este projeto foi desenvolvido em NodeJS (v12.17.0) com TypeScript (^3.9.3)
 
 Este projeto tem algumas particularidades no que diz respeito a realtime e agendamentos de tarefas 
 
 ## <a id="uso"> 2. O que foi usado
 
 A seguir, serão apresentados os principais pacotes que foram usados no projeto
+
+**NO BACKEND**
 
 * <b>Express</b>
 
@@ -41,9 +43,30 @@ Para aplicação realtime
 
 ORM para auxiliar na comunicação com o banco de dados
 
-* <b>MySQL 8.0 </b>
+* <b>MySQL v8.0 </b>
+
+* md5
+
+Para criptografia de senha
 
 O banco de dados usado no projeto
+
+**NO FRONTEND**
+
+* Angular v8.1.0
+
+* socket.io-client
+
+Para aplicação reativa
+
+* Dual ListBox
+
+Select personalizado com duas áreas para associação
+
+* md5
+
+Para criptografia de senha
+
 
 [Voltar ao inicio](#begin)
 
@@ -93,9 +116,18 @@ Esse script criará o banco de dados, as tabelas e ainda insere dados de teste
 
 ## <a id="run"> 5. Executando o projeto
 
+**BACKEND**
+
 Após o banco de dados estiver em execução, os pacotes estiverem instalados, o script de base ser executado, aí o projeto poderá entrar em operação. Para isso, dê o comando:
 
     npm run dev
+    
+**FRONTDEND**
+
+Depois que a API estiver inicializada e em execução, dentro da raíz do frontend é necessário rodar o comando:
+
+        ng serve
+
 
 [Voltar ao inicio](#begin)
 
@@ -166,7 +198,7 @@ Na pasta [er](https://github.com/cbcarlos07/desafio-ipdv/tree/master/backend/src
 
 ## <a id="part"> 10. Particularidades do Projeto
 
-O projeto trabalha de forma reativa ou seja, em tempo real
+O projeto trabalha de forma reativa, ou seja, em tempo real
 
 Após feito o login, o usuário tem **60 minutos** para usar o sistema.
 
